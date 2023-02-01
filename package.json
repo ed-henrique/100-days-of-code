@@ -1,0 +1,19 @@
+{
+  "name": "100-days-of-javascript",
+  "version": "1.0.0",
+  "description": "code related to the 100 days of JavaScript Course",
+  "main": "index.js",
+  "scripts": {
+    "new": "cp -r template $1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ed-henrique/100-days-of-javascript.git"
+  },
+  "author": "Eduardo Henrique <edu.hen.fm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ed-henrique/100-days-of-javascript/issues"
+  },
+  "homepage": "https://github.com/ed-henrique/100-days-of-javascript#readme"
+}
