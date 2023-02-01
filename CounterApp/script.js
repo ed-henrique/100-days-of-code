@@ -6,15 +6,17 @@ const sub = document.querySelector(".subtract");
 const resetCount = document.querySelector(".reset");
 
 buttons.addEventListener("click", (e) => {
-	if (e.target.classList.contains("add")) {
-		count.innerHTML++;
-	} else if (e.target.classList.contains("reset")) {
-		count.innerHTML = 0;
-	} else if (e.target.classList.contains("subtract")) {
-		count.innerHTML--;
-	}
+    const button = e.target.classList;
 
-	setColor();
+	if (button.contains("add")) {
+		count.innerHTML++;
+	} else if (button.contains("reset")) {
+        count.innerHTML = 0;
+	} else if (button.contains("subtract")) {
+        count.innerHTML--;
+	}
+    
+    setColor();
 });
 
 function setColor() {
