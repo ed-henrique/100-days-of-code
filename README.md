@@ -1,10 +1,10 @@
-# 100 Days of JavaScript
+# 100 Days of Code
 
-Code related to the 100 days of JavaScript Course.
+Code related to 100 days of X courses.
 
-## Daily Projects
+## Progress
 
-| Day | Project                 | Link                           |
-| :-: | :---------------------- | :----------------------------: |
-| 1   | Counter App             | [➡️](./CounterApp/)            |
-| 2   | Random Number Generator | [➡️](./RandomNumberGenerator/) |
+| Language   | Link            |
+| :--------: | :-------------: |
+| JavaScript | [➡️](./JS/)     |
+| Python     | [➡️](./Python/) |
