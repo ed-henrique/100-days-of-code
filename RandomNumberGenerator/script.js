@@ -1,44 +1,17 @@
-const count = document.querySelector(".count");
-const buttons = document.querySelector(".buttons");
+const number = document.querySelector(".random-number");
+const generateNumberButton = document.querySelector(".generate-number");
 
-const add = document.querySelector(".add");
-const sub = document.querySelector(".subtract");
-const resetCount = document.querySelector(".reset");
+const INCLUSIVE_LOWER_LIMIT = 0;
+const EXCLUSIVE_UPPER_LIMIT = 11;
 
-buttons.addEventListener("click", (e) => {
-    const button = e.target.classList;
+const generateRandomNumber = () => {
+	const randomNumber = Math.floor(
+		Math.random() * EXCLUSIVE_UPPER_LIMIT + INCLUSIVE_LOWER_LIMIT,
+	);
 
-	if (button.contains("add")) {
-		count.innerHTML++;
-	} else if (button.contains("reset")) {
-        count.innerHTML = 0;
-	} else if (button.contains("subtract")) {
-        count.innerHTML--;
-	}
-    
-    setColor();
-});
+	number.innerHTML = randomNumber;
+};
 
-function setColor() {
-	if (count.innerHTML > 0) {
-		count.style.color = "yellow";
-	} else if (count.innerHTML < 0) {
-		count.style.color = "orangered";
-	} else {
-		count.style.color = "var(--white)";
-	}
-}
+generateRandomNumber();
 
-/*
-add.addEventListener("click", () => {
-	count.innerHTML++;
-});
-
-sub.addEventListener("click", () => {
-	count.innerHTML--;
-});
-
-resetCount.addEventListener("click", () => {
-	count.innerHTML = 0;
-});
-*/
+generateNumberButton.addEventListener("click", generateRandomNumber);
