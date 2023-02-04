@@ -95,14 +95,31 @@ form button:hover {
     margin: 15% auto;
     padding: 2rem;
     border: 1px solid #777;
+    border-radius: 3px;
     text-align: center;
-    animation: slide ease .8s;
+    animation: slideDown ease .8s;
 }
 
-@keyframes slide {
-    from {
+.slide-up {
+    animation: slideUp ease .8s;
+}
+
+@keyframes slideDown {
+    0% {
         transform: translateY(-30rem);
-    } to {
+    }
+
+    100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(-30rem);
     }
 }
